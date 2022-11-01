@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOapp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+            <div class="btns">
+                <button id="add" onclick="disp(this)" class="active">add task</button>
+                <button id="comp" onclick="disp(this)">completed tasks</button>
+                <button id="incomp" onclick="disp(this)">incompleted tasks</button>
+            </div>
+
+            <form id="newTask" class="new-task">
+                <h2>TODO app</h2>
+                <input type="text" id="addTask" placeholder="add task..">
+                <input type="text" id="taskDescription" placeholder="Task description">
+                
+                
+                <div class="button-row">
+                    <button id="addBtn" type="submit" onclick="taskInput(this)">Add Task</button>
+                    <!-- <button id="updateBtn" type="submit">Update Task</button> -->
+                    <button id="deleteBtn" type="submit">Delete All</button>
+                </div>
+                
+            </form>
+
+           
+
+            <!-- incomplete tasks -->
+            <div class="tasks" id="tasks">
+                <h4 class="new-task">Incomplete Task</h4>
+                               
+            </div>
+            
+         <!-- Completed tasks container --> 
+            <div class="completeCON" id="completeCON">
+                <h4 class="completedHint">Completed Tasks</h4>
+                <input type="radio" name="" id="">
+            </div>
+
+    </div>
+            
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
